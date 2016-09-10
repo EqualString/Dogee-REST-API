@@ -41,7 +41,7 @@ app.post('/mydog-info', tokenTest, function(req,res){
 	var json = jsonfile.readFileSync(file); //Dohvati json
 	
 	var data = {
-		"dog": json.dog
+		"metaData": json.dog
 	};
 	
 	res.send(data);
@@ -53,7 +53,7 @@ app.post('/mydog-cijepljenje', tokenTest, function(req,res){
 	var json = jsonfile.readFileSync(file); 
 	
 	var data = {
-		"cijepljenje": json.cijepljenje
+		"metaData": json.cijepljenje
 	};
 	
 	res.send(data); 
@@ -65,7 +65,7 @@ app.post('/mydog-hranjenje', tokenTest, function(req,res){
 	var json = jsonfile.readFileSync(file); 
 	
 	var data = {
-		"hranjenje": json.hranjenje
+		"metaData": json.hranjenje
 	};
 	
 	res.send(data); 
@@ -77,7 +77,7 @@ app.post('/mydog-setnja', tokenTest, function(req,res){
 	var json = jsonfile.readFileSync(file); 
 	
 	var data = {
-		"setnja": json.setnja
+		"metaData": json.setnja
 	};
 	
 	res.send(data);
