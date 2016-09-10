@@ -4,25 +4,62 @@
 		"password": "Ker"
 	},
     "dog": {
-        "name": "",
-        "opis": "",
-        "starost": 0,
-        "birthdate": "",
-		"vrsta": ""
+        "name": "Tobi",
+        "opis": "Svijetlo smeđi. Nikad zalajao. Voli djecu jako :-).",
+        "starost": 4,
+        "birthdate": "31-5-2012T23:33",
+		"vrsta": "Koker"
     },
-    "cjepljene": { 
-        "timestamp": "",
-        "opis": "",
-        "isDone": true
-    },
-	"hranjenje": { 
-        "timestamp": "",
-        "opis": "",
-        "isDone": true
-    },
-	"setnja": { 
-        "timestamp": "",
-        "opis": "",
-        "isDone": true
-    }
+    "cijepljenje":[
+		{ 
+			"timestamp": "8-2-2016T20:33",
+			"opis": "Nije se dao ko uvijek.",
+			"isDone": true
+		},
+		{ 
+			"timestamp": "5-2-2014T18:00",
+			"opis": "Nije se dao ko uvijek.",
+			"isDone": true
+		},
+		{ 
+			"timestamp": "14-2-2013T15:22",
+			"opis": "Nije se dao.",
+			"isDone": true
+		}
+	],
+	"hranjenje":[
+		{ 
+			"timestamp": "10-9-2016T15:33",
+			"opis": "Ne voli onu hranu iz Lidla.",
+			"isDone": true
+		},
+		{ 
+			"timestamp": "10-9-2016T10:33",
+			"opis": "Trbuh ga bolio pa je jeo oštru travu.",
+			"isDone": true
+		},
+		{ 
+			"timestamp": "9-9-2016T16:02",
+			"opis": "Nije mu pasalo.",
+			"isDone": true
+		},
+		{ 
+			"timestamp": "9-9-2016T9:30",
+			"opis": "Može se i dragat dok jede :D.",
+			"isDone": true
+		}
+	
+	],
+	"setnja":[
+		{ 
+			"timestamp": "10-9-2016T17:33",
+			"opis": "Bio odličan u parku za pse.",
+			"isDone": true
+		},
+		{ 
+			"timestamp": "9-9-2016T14:33",
+			"opis": "Do pruge i nazad. Bez povodca.",
+			"isDone": true
+		}
+	]
 }

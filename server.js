@@ -22,15 +22,37 @@ app.use(bodyParser.urlencoded({ extended: true })); // support za encoded body
 app.post('/login', logIn);
 app.post('/logout', tokenTest, function(req,res){
 
-	res.send('');
+	var config = {
+		"username": req.body.username,
+		"status": true,
+		"token": ""
+	};
+		
+	res.send(config);
 	res.end();
 	
 });
-app.post('/mydog', tokenTest, function(req,res){
+app.post('/mydog-cijepljenje', tokenTest, function(req,res){
 
 	var json = jsonfile.readFileSync(file); //Dohvati json
 	
-	res.send(json); //Pošalji cijeli json
+	res.send(json.cijepljenje); //Pošalji cijeli json
+	res.end();
+
+});
+app.post('/mydog-hranjenje', tokenTest, function(req,res){
+
+	var json = jsonfile.readFileSync(file); //Dohvati json
+	
+	res.send(json.hranjenje); //Pošalji cijeli json
+	res.end();
+
+});
+app.post('/mydog-setnja', tokenTest, function(req,res){
+
+	var json = jsonfile.readFileSync(file); //Dohvati json
+	
+	res.send(json.setnja); //Pošalji cijeli json
 	res.end();
 
 });
