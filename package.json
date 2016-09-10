@@ -1,5 +1,5 @@
 {
-  "name": "Dogee REST API",
+  "name": "Dogee-REST-API",
   "description": "Dogee REST API for Android app",
   "main": "server.js",
   "scripts": {
