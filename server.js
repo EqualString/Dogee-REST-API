@@ -19,6 +19,8 @@ app.use(bodyParser.json()); // support za json encoded body
 app.use(bodyParser.urlencoded({ extended: true })); // support za encoded body
 
 /** API **/
+
+//Login&Logout
 app.post('/login', logIn);
 app.post('/logout', tokenTest, function(req,res){
 
@@ -32,6 +34,8 @@ app.post('/logout', tokenTest, function(req,res){
 	res.end();
 	
 });
+
+//Dohvaćanje informacija
 app.post('/mydog-info', tokenTest, function(req,res){
 
 	var json = jsonfile.readFileSync(file); //Dohvati json
@@ -64,6 +68,8 @@ app.post('/mydog-setnja', tokenTest, function(req,res){
 	res.end();
 
 });
+
+//Update rute
 
 
 //Dodatne funkcije
@@ -103,7 +109,12 @@ function tokenTest(req, res, next){
 		
 	}else{
 	
-		res.send('token-error');
+		var config = {
+			"username": req.body.username,
+			"status": false,
+			"token": "wrong-token"
+		};
+		res.send(config);
 		res.end();
 		
 	} 
