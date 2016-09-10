@@ -40,11 +40,7 @@ app.post('/mydog-info', tokenTest, function(req,res){
 
 	var json = jsonfile.readFileSync(file); //Dohvati json
 	
-	var data = {
-		"metaData": json.dog
-	};
-	
-	res.send(data);
+	res.send(json.dog);
 	res.end();
 
 });
@@ -86,7 +82,6 @@ app.post('/mydog-setnja', tokenTest, function(req,res){
 });
 
 //Update rute
-
 
 //Dodatne funkcije
 function logIn(req,res) {
