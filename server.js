@@ -42,11 +42,24 @@ function logIn(req,res) {
 	var json = jsonfile.readFileSync(file); //Dohvati json
 	
 	if ((json.user.username == req.body.username)&&(json.user.password == req.body.password)){
-		res.send(app_token); //Vrati token
+	
+		var config = {
+			"username": req.body.username,
+			"status": true,
+			"token": app_token
+		};
+		
+		res.send(config); //Vrati token
 		res.end();
 	}
 	else {
-		res.send('wrong-login');
+	
+		var config = {
+			"username": req.body.username,
+			"status": false
+		};
+		
+		res.send(config);
 		res.end();
 	}
 	
