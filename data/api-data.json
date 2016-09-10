@@ -1,0 +1,28 @@
+{
+	"user": {
+		"username": "Matea",
+		"password": "Ker"
+	},
+    "dog": {
+        "name": "",
+        "opis": "",
+        "starost": 0,
+        "birthdate": "",
+		"vrsta": ""
+    },
+    "cjepljene": { 
+        "timestamp": "",
+        "opis": "",
+        "isDone": true
+    },
+	"hranjenje": { 
+        "timestamp": "",
+        "opis": "",
+        "isDone": true
+    },
+	"setnja": { 
+        "timestamp": "",
+        "opis": "",
+        "isDone": true
+    }
+}
