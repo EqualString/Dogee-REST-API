@@ -3,6 +3,7 @@ var express    = require('express');
 var bodyParser = require('body-parser');
 var app        = express();
 var jsonfile   = require('jsonfile');
+var jsonupdate = require('json-update');
 
 var file = 'data/api-data.json';
 var app_token = '6WjVwnhfh9m2jT385X21aJrL5z0zM375';
@@ -40,7 +41,7 @@ app.post('/mydog-info', tokenTest, function(req,res){
 
 	var json = jsonfile.readFileSync(file); //Dohvati json
 	
-	res.send(json.dog);
+	res.send(json.dog); //Info o psu
 	res.end();
 
 });
@@ -81,7 +82,8 @@ app.post('/mydog-setnja', tokenTest, function(req,res){
 
 });
 
-//Update rute
+//Update ruta
+app.post('/mydog-update', tokenTest, updateFields);
 
 //Dodatne funkcije
 function logIn(req,res) {
@@ -108,6 +110,154 @@ function logIn(req,res) {
 		
 		res.send(config);
 		res.end();
+	}
+	
+}
+
+function updateFields(req,res){
+	
+	var data = JSON.parse(req.body.metaData); //Novi podaci koji se spremaju
+	var fieldName = req.body.fieldName; //Naziv fielda na kojem se vrši update
+	
+	if (fieldName == "user"){
+	
+		jsonupdate.update(file, { user: data  }, function(err, obj) {
+			if (typeof err !== "undefined" && err !== null) {
+			
+				var config = {
+					"status" : false,
+					"error" : err.message
+				};
+				res.send(config);
+				res.end();
+				
+			}
+			else{
+			
+				var config = {
+					"status" : true
+				};
+				
+				res.send(config);
+				res.end();
+				
+			}
+		});
+	
+	}
+	else if ( fieldName == "dog" ){
+	
+		jsonupdate.update(file, { dog: data  }, function(err, obj) {
+			if (typeof err !== "undefined" && err !== null) {
+			
+				var config = {
+					"status" : false,
+					"error" : err.message
+				};
+				res.send(config);
+				res.end();
+				
+			}
+			else{
+			
+				var config = {
+					"status" : true
+				};
+				
+				res.send(config);
+				res.end();
+				
+			}
+		});
+	
+	}
+	else if ( fieldName == "cijepljenje" ){
+	
+		jsonupdate.update(file, { cijepljenje: data  }, function(err, obj) {
+			if (typeof err !== "undefined" && err !== null) {
+			
+				var config = {
+					"status" : false,
+					"error" : err.message
+				};
+				res.send(config);
+				res.end();
+				
+			}
+			else{
+			
+				var config = {
+					"status" : true
+				};
+				
+				res.send(config);
+				res.end();
+				
+			}
+		});
+	
+	}
+	else if ( fieldName == "hranjenje" ){
+	
+		jsonupdate.update(file, { hranjenje: data  }, function(err, obj) {
+			if (typeof err !== "undefined" && err !== null) {
+			
+				var config = {
+					"status" : false,
+					"error" : err.message
+				};
+				res.send(config);
+				res.end();
+				
+			}
+			else{
+			
+				var config = {
+					"status" : true
+				};
+				
+				res.send(config);
+				res.end();
+				
+			}
+		});
+	
+	}
+	else if ( fieldName == "setnja" ){
+	
+		jsonupdate.update(file, { setnja: data  }, function(err, obj) {
+			if (typeof err !== "undefined" && err !== null) {
+			
+				var config = {
+					"status" : false,
+					"error" : err.message
+				};
+				res.send(config);
+				res.end();
+				
+			}
+			else{
+			
+				var config = {
+					"status" : true
+				};
+				
+				res.send(config);
+				res.end();
+				
+			}
+		});
+	
+	}else{
+		
+		var config = {
+			"status": false,
+			"error": "wrong-fieldName"
+		};
+		
+		res.send(config);
+		res.end();
+	
 	}
 	
 }
