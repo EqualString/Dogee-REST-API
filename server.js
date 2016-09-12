@@ -93,6 +93,22 @@ app.post('/mydog-lokacije', tokenTest, function(req,res){
 	res.end();
 
 });
+app.post('/mydog-notifikacije',tokenTest, function(req,res){
+
+	var json = jsonfile.readFileSync(file); 
+	
+	var data = {
+		"metaData":{
+			"cijepljenje":json.cijepljenje,
+			"hranjenje":json.hranjenje,
+			"setnja":json.setnja
+		}
+	};
+	
+	res.send(data);
+	res.end();
+	
+});
 
 //Update ruta
 app.post('/mydog-update', tokenTest, updateFields);
