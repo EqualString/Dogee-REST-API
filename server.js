@@ -98,10 +98,10 @@ app.post('/mydog-notifikacije',tokenTest, function(req,res){
 	var json = jsonfile.readFileSync(file); 
 	
 	var data = {
-		"metaData":{
-			"cijepljenje":json.cijepljenje,
-			"hranjenje":json.hranjenje,
-			"setnja":json.setnja
+		"metaData": {
+			"cijepljenje": json.cijepljenje,
+			"hranjenje": json.hranjenje,
+			"setnja": json.setnja
 		}
 	};
 	
