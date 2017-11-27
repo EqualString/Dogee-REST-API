@@ -12,38 +12,38 @@
     },
     "cijepljenje":[
 		{
-		  "timestamp": "3-5-2016T11:00",
+		  "timestamp": "26-11-2017T13:00",
 		  "opis": "Primio ampulicu protiv buha.",
 		  "type": 1,
-		  "timestampMillis": 1462273200 ,
+		  "timestampMillis": 1511701200 ,
 		  "isDone": true
 		},
 		{
-		  "timestamp": "10-5-2016T13:00",
+		  "timestamp": "26-11-2017T14:00",
 		  "opis": "Sakrivali mu antibiotik u hranu.",
 		  "type": 1,
-		  "timestampMillis": 1462885200 ,
+		  "timestampMillis": 1511704800 ,
 		  "isDone": true
 		},
 		{
-		  "timestamp": "12-8-2016T12:33",
+		  "timestamp": "26-11-2017T10:10",
 		  "opis": "Odradio godišnje cijepljenje protiv bjesnoće.",
 		  "type": 1,
-		  "timestampMillis": 1471005180,
+		  "timestampMillis": 1511691000,
 		  "isDone": true
 		},
 		{
-		  "timestamp": "12-8-2016T17:25",
+		  "timestamp": "27-12-2017T18:00",
 		  "opis": "Primio ampulicu protiv krpelja.",
 		  "type": 1,
-		  "timestampMillis": 1471024500 ,
-		  "isDone": true
+		  "timestampMillis": 1514397600 ,
+		  "isDone": false
 		},
 		{
-		  "timestamp": "20-8-2017T15:22",
+		  "timestamp": "23-12-2017T12:22",
 		  "opis": "Primijo cjepivo protiv bjesnoće.",
 		  "type": 1,
-		  "timestampMillis": 1503242520 ,
+		  "timestampMillis": 1514031720 ,
 		  "isDone": false
 		}
 	],
@@ -59,7 +59,7 @@
 		  "timestamp": "10-9-2016T10:33",
 		  "opis": "Trbuh ga bolio pa je jeo oštru travu.",
 		  "type": 2,
-		  "timestampMillis": 1474027320,
+		  "timestampMillis": 1511701200,
 		  "isDone": true
 		},
 		{
@@ -98,52 +98,52 @@
 		  "isDone": true
 		},
 		{
-		  "timestamp": "13-9-2016T9:10",
+		  "timestamp": "13-9-2017T10:00",
 		  "opis": "Oštri zube na vitaminskoj kosti.",
 		  "type": 2,
-		  "timestampMillis": 1473757800,
+		  "timestampMillis": 1505210400,
 		  "isDone": true
 		},
 		{
-		  "timestamp": "14-9-2016T12:05",
+		  "timestamp": "22-11-2017T19:00",
 		  "opis": "Dobio salamu kao poslasticu.",
 		  "type": 2,
-		  "timestampMillis": 1473854700 ,
+		  "timestampMillis": 1511716816 ,
 		  "isDone": true
 		},
 		{
-		  "timestamp": "15-9-2016T22:10",
+		  "timestamp": "19-10-2017T11:00",
 		  "opis": "Nije pojeo cijelu večeru.",
 		  "type": 2,
-		  "timestampMillis": 1473977400,
+		  "timestampMillis": 1508410800,
 		  "isDone": true
 		},
 		{
-		  "timestamp": "16-9-2016T14:15",
+		  "timestamp": "12-12-2017T12:00",
 		  "opis": "Za ručak pojeo omiljeno jelo.",
 		  "type": 2,
-		  "timestampMillis": 1474035300 ,
-		  "isDone": true
+		  "timestampMillis": 1513076400 ,
+		  "isDone": false
 		},
 		{
 		  "timestamp": "17-9-2016T12:10",
 		  "opis": "Od susjeda dobio mali snack.",
 		  "type": 2,
 		  "timestampMillis": 1474114200,
-		  "isDone": false
+		  "isDone": true
 		},
 		{
-		  "timestamp": "18-9-2016T15:20",
+		  "timestamp": "1-1-2018T9:00",
 		  "opis": "Probao opet jesti konzerviranu hranu.",
 		  "type": 2,
-		  "timestampMillis": 1474212000 ,
+		  "timestampMillis": 1514797200 ,
 		  "isDone": false
 		},
 		{
-		  "timestamp": "19-9-2016T16:25",
+		  "timestamp": "12-2-2018T11:00",
 		  "opis": "Bolje mu paše suha hrana.",
 		  "type": 2,
-		  "timestampMillis": 1474302300,
+		  "timestampMillis": 1518476400,
 		  "isDone": false
 		}
 	],
@@ -177,45 +177,45 @@
 		  "isDone": true
 		},
 		{
-		  "timestamp": "13-9-2016T17:55",
+		  "timestamp": "13-9-2017T17:55",
 		  "opis": "Šetali uz jezero Petnja bez povodca.",
 		  "type": 3,
-		  "timestampMillis": 1473789300,
+		  "timestampMillis": 1505325300,
 		  "isDone": true
 		},
 		{
-		  "timestamp": "14-9-2016T18:05",
+		  "timestamp": "14-9-2017T18:05",
 		  "opis": "Šetali naseljem Sjenjak.",
 		  "type": 3,
-		  "timestampMillis": 1473876300,
+		  "timestampMillis": 1505412300,
 		  "isDone": true
 		},
 		{
-		  "timestamp": "14-9-2016T18:30",
+		  "timestamp": "29-12-2017T11:00",
 		  "opis": "Navratili do parka za pse na igranje.",
 		  "type": 3,
-		  "timestampMillis": 1473877800,
-		  "isDone": true
-		},
-		{
-		  "timestamp": "15-9-2016T17:35",
-		  "opis": "Šetali promenadom.",
-		  "type": 3,
-		  "timestampMillis": 1473960900,
-		  "isDone": true
-		},
-		{
-		  "timestamp": "16-9-2016T18:50",
-		  "opis": "Boravili u parku za pse.",
-		  "type": 3,
-		  "timestampMillis": 1474051800,
+		  "timestampMillis": 1514545200,
 		  "isDone": false
 		},
 		{
-		  "timestamp": "17-9-2016T12:07",
+		  "timestamp": "28-12-2017T17:35",
+		  "opis": "Šetali promenadom.",
+		  "type": 3,
+		  "timestampMillis": 1514482500,
+		  "isDone": false
+		},
+		{
+		  "timestamp": "25-12-2017T18:50",
+		  "opis": "Boravili u parku za pse.",
+		  "type": 3,
+		  "timestampMillis": 1514227800,
+		  "isDone": false
+		},
+		{
+		  "timestamp": "28-12-2017T12:07",
 		  "opis": "Hvatao loptice po dvorištu.",
 		  "type": 3,
-		  "timestampMillis": 1474114020,
+		  "timestampMillis": 1514462820,
 		  "isDone": false
 		}
 	],
